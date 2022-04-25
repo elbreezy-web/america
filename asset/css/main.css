@@ -1,0 +1,701 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    /* font-family: 'Lato', sans-serif; */
+    font-family: 'Courgette', cursive;
+    overflow-x: hidden;
+}
+#header{
+    display: flex;
+    flex-direction: column;
+    min-height: 90vh;
+    /* max-width: 320px; */
+    /* border: 1px solid red; */
+}
+nav{
+    flex: 0 0 auto;
+    align-items: center;
+}
+.banner{
+    flex: 1 0 auto;
+}
+nav ul{
+    list-style-type: none;
+}
+nav ul li a{
+    display: block;
+    text-decoration: none;
+    color: #2b98f0;
+    padding: 10px;
+    font-size: 20px;
+    transition: 2s ease, background 1s ease, padding 2s ease;
+}
+nav ul li a:hover{
+    color: #f5f5f5;
+    padding-left: 20px;
+    background: #2b98f0;
+}
+.nav-top{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px 20px 10px;
+}
+.nav-top h3{
+    font-size: 32px;
+    padding: 5px;
+    color: #2b98f0;
+    transition: color 2s ease, background 2s ease;
+}
+.hamburger{
+    padding: 5px;
+    border: lid red solid red solid #2b98f0;
+    cursor: pointer;
+    align-self: center;
+}
+.ham{
+    width: 35px;
+    height: 5px;
+    background: #2b98f0;
+    margin: 5px 0;
+}
+.sign{
+    border: none;
+    height: 38px;
+    width: 90px;
+    background: #2b98f0;
+    color: #ffffff;
+    font-size: 20px;
+    padding-left: 1px;
+    border-radius: 5px;
+}
+.sign:hover{
+    background: #ffffff;
+    color: #2b98f0;
+    border: lid red solid red solid;
+    cursor: pointer;
+}
+@media screen and (min-width: 690px){
+    nav{
+        display: flex;
+        align-items: baseline;
+        flex-wrap: wrap;
+        padding: 0 20px;
+    }
+    .nav-top h3{
+        margin-right: 130px;
+    }
+    .hamburger{
+        display: none;
+    }
+    nav ul{
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: 50px;
+    }
+    .sign{
+        border: none;
+        height: 38px;
+        width: 90px;
+        background: #2b98f0;
+        color: #ffffff;
+        font-size: 20px;
+    }
+    .sign:hover{
+        background: #ffffff;
+        color: #2b98f0;
+        border: lid red solid red solid;
+        cursor: pointer;
+    }
+    .fa-angle-down{
+        font-size: 15px;
+    }
+}
+/* banner */
+.banner{
+    background: url("../img/bannerbackground.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+.banner-box{
+    padding-left: 40px;
+}
+.banner-box h1{
+    color: #ffffff;
+    margin: 10px 0;
+    text-shadow: 1px 1px black;
+}
+.banner-box h5{
+    font-size: 8px;
+    color: #ffffff;
+    margin: 10px 0;
+    text-shadow: 1px 1px black;
+}
+.search{
+    display: flex;
+}
+.search span{
+    margin-left: 5px;
+    height: 20px;
+    width: 75px;
+    font-size: 15px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 700;
+    background: #2b98f0;
+}
+@media screen and (min-width: 690px){
+    .search span{
+        height: 32px;
+        width: 88px;
+        padding: 5px;
+        border-radius: 5px;
+        font-size: 18px;
+    }
+    .search::placeholder{
+        font-size: 15px;
+        font-style: italic;
+    }
+    .banner-box h1{
+        font-size: 70px;
+        font-weight: 700;
+        color: #ffffff;
+        margin: 10px 0;
+        text-shadow: 1px 1px black;
+    }
+    .banner-box h5{
+        font-size: 20px;
+        color: #ffffff;
+        margin: 10px 0;
+        text-shadow: 1px 1px black;
+    }
+    .search input{
+        width: 650px;
+        height: 33px; 
+    }
+}
+/* flight booking */
+.flight-booking{
+    height: 110vh;
+    margin-left: 21%;
+    padding-top: 30px;
+    width: 400px;
+    padding-left: 65px; 
+}
+.flight{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 120vh;
+}
+.sec-1{
+    width: 40%;
+    padding-left: 33px;
+    height: 200px;
+    padding-top: 5px;
+    margin-bottom: 10px;
+}
+.sec-1 h6{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.flight-header h6{
+    width: fit-content;
+}
+select{
+    width: 166px;
+}
+input{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: grey;
+}
+label{
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+}
+.radio{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.flight-header{
+    display: flex;
+    align-items: center;
+}
+.flight-header:hover{
+    color: rgb(74, 137, 231);
+}
+.flight-header h6{
+    margin-left: 5px;
+}
+.sec-2{
+    width: 40%;
+    padding-left: 33px;
+    height: 200px;
+    padding-top: 5px;
+    margin-bottom: 10px;
+}
+.sec-3{
+    width: 40%;
+    padding-left: 33px;
+    height: 200px;
+    padding-top: 5px;
+    margin-bottom: 10px;
+}
+.button{
+    background: rgb(22, 100, 216);;
+    height: 35px;
+    width: 100px;
+    border: none;
+    font-weight: 800;
+    color: white;
+    font-style: italic;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 2s ease, background 1s ease, padding 2s ease, border 2s ease;
+}
+.bf:hover{
+    border: lid red solid red solid white;
+    padding-left: lid red;
+}
+@media screen and (min-width: 776px){
+    .flight-booking{
+        padding-left: 80px;
+        padding-top: 50px;
+        display: flex;
+        width: 80%;
+        height: 50vh;
+        bottom: 55px;
+        margin-left: 120px;
+        position: relative;
+        z-index: 1;
+        background: #ffffff;
+        border-radius: 15px;
+        box-shadow: 3px 3px 3px 3px rgb(197, 195, 195); 
+    }
+    .flight{
+        height: 50%;
+    }
+}
+/* end of flight booking */
+/* why fly with us */
+.wfwu{
+    margin: 40px;
+    overflow: hidden;
+}
+.why-header h1{
+    margin-bottom: 20px;
+    color: rgba(37, 69, 88, 0.849);
+    border-bottom: 3px solid black;
+    display: inline;
+    margin-left: 40px;
+}
+.unbeat h6{
+    color: grey;
+    font-size: 10px;
+}
+.unbeat h5{
+    color: rgba(30, 151, 221, 0.849);
+    font-size: 20px;
+}
+.ud{
+    border-radius: 5px;
+    padding-left: 10px;
+    margin-bottom: 10px;    
+    width: 300px;
+    transition: 2s ease, background 1s ease, padding 2s ease;
+    overflow: hidden;
+}
+.ud:hover{
+    background-color: rgba(30, 151, 221, 0.849);
+    padding-left: 3px;
+    padding-bottom: 2px;
+}
+.ud .fa-cart-plus,
+ .fa-star, 
+ .fa-paw, 
+ .fa-server{
+    color: black;
+    margin-bottom: 5px;
+    margin-top: 8px;
+    background: white;
+    transition: 2s ease, background 1s ease, padding 2s ease;
+}
+.ud .fa-cart-plus:hover,
+ .fa-star:hover, 
+ .fa-paw:hover, 
+ .fa-server:hover{
+    color: grey;
+}
+@media screen and (min-width: 776px){
+     .reason{
+         display: flex;
+         justify-content: space-between;
+
+     }
+     .wfwu{
+        padding-top: 40px;
+     }
+ }
+/* end of why fly with us */
+/* Offers */
+.section-tittle h1{
+    margin-bottom: 30px;
+    color: rgba(37, 69, 88, 0.849);
+    margin-left: 40px;
+    border-bottom: 3px solid black;
+    display: inline;
+}
+.todays-offer{
+    margin: 40px;
+    padding-top: 30px;
+}
+.offer{
+    width: 300px;
+    margin-bottom: 30px;
+    box-shadow: 2px 2px 2px 2px rgb(197, 195, 195);
+    border-radius: 15px 15px 0 0;
+}
+.offer-img img{
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+
+}
+.offer-tittle h4{
+    font-size: 18px;
+    color: rgba(30, 151, 221, 0.849);
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.tfb{
+    padding-left: 25px;
+}
+.offer-description h5{
+    font-size: 9.8px;
+    width: 250px;
+    word-spacing: 5px;
+    color: grey;
+}
+.offer-button button{
+    width: 90px;
+    height: 30px;
+    background: none;
+    border: 2px solid rgba(30, 151, 221, 0.849);
+    border-radius: 3px;
+    color: rgba(30, 151, 221, 0.849);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: all 1s;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+}
+.offer-button button:hover{
+    background: rgba(30, 151, 221, 0.849);
+    color: white;
+}
+@media screen and (min-width: 776px) {
+    .todays-offer{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+        padding-top: 30px;
+        padding-left: 50px;
+    }
+    .off-img img{
+        height: 220px;
+    }
+}
+/* end Offers */
+/* commitment section */
+.section-wrap{
+    margin: 40px;
+    padding-top: 40px;
+}
+.commitment-img img{
+    width: 400px;
+}
+.comment h2{
+    margin-top: 20px;
+    color: rgba(30, 151, 221, 0.849);
+    margin-bottom: 10px;
+}
+.comment-info h6{
+    color: grey;
+    margin-bottom: 10px;
+    font-size: 12px;
+    margin-top: 13px;
+}
+.comment-button button{
+    background: rgba(30, 151, 221, 0.849);
+    height: 30px;
+    width: 150px;
+    border: 0;
+    border-radius: 2px;
+    color: white;
+    font-size: 10px;
+    font-weight: 600;
+    transition: all 1s;
+    cursor: pointer;
+    border: rgba(30, 151, 221, 0.849);
+}
+.comment-button button:hover{
+    background: white;
+    color: rgba(30, 151, 221, 0.849);
+    border: 3px solid rgba(30, 151, 221, 0.849);
+}
+@media screen and (min-width: 776px) {
+    .section-wrap{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-right: 250px;
+        padding-left: 100px;
+    }
+    .comment-info h6{
+        font-size: 12px;
+        width: 400px;
+    }
+    .commitment-img img{
+        height: 300px;
+    }
+    .comment{
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+}
+/* end of commitment section */
+/* download section */
+.main-download{
+    height: 100vh;
+    background: #2b98f0;
+    padding-top: 5px;
+}
+.download{
+    margin: 40px;
+}
+.daa .daaa{
+    width: 300px;
+    color: white;
+    margin-bottom: 10px;
+}
+.download-description h5{
+    color: white;
+    font-size: 10px;
+    margin-bottom: 10px;
+    font-weight: lighter;
+}
+.icon .fa-anchor,.fa-globe{
+    color: white;
+    font-size: 30px;
+}
+.get-app{
+    display: flex;
+    border: 1px solid white;
+    width: 130px;
+    background: black;
+    padding: 2px;
+    cursor: pointer;
+}
+.download-location h6{
+    margin-left: 5px;
+    color: white;
+}
+.download-location h6 span{
+    font-size: 15px;
+    font-weight: 700;
+}
+.app-download{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 90px;
+}
+.app-picture img{
+    display: inline-block;
+    height: 350px;
+    width: 300px;
+    margin-top: 20px;
+    border-radius: 15px 5px 15px 5px;
+}
+@media screen and (min-width: 776px) {
+    .main-download{
+        height: 80vh;
+    }
+    .download{
+        display: flex;
+        justify-content: space-between;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .download-description h5{
+        width: 400px;
+        line-height: 20px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .app-picture img{
+      height: 380px;
+    }
+    .app-picture{
+        padding-bottom: 10px;
+    }
+    .daa{
+        padding-top: 90px;
+    }
+    .get-app{
+        width: 150px;
+        margin-right: 20px;
+    }
+    .download-location h6{
+        margin-left: 10px;
+    }
+}
+/* End of download section */
+/* Tours and Activities */
+.tours-and-activities{
+    margin: 40px;
+}
+.tanda-header h2{
+    color: #2b98f0;
+    margin-bottom: 10px;
+}
+.location .underline{
+    background: white;
+    width: 55px;
+    height: 3px;
+    margin-top: 5px;
+    margin-left: 170px;
+    margin-bottom: 5px;
+}
+.location-underline{
+    position: relative;
+    z-index: 1;
+    top: 70px;
+    width: 400px;
+    padding-right: 40px;
+}
+.location-underline h3{
+    font-size: 15px;
+    margin-left: 33px;
+    text-align: center;
+    color: white;
+}
+.location img{
+    width: 400px;
+    border-radius: 5px;
+}
+
+@media screen and (min-width: 960px) {
+    .tanda-wrap{
+        display: flex;
+    }
+    .location .germany{
+        height: 93%;
+        width: 380px;
+    }
+    .location .carlifornia{
+        width: 390px;
+        height: 50vh;
+        margin-bottom: 10px;
+    
+    }
+}
+
+/* End of Tours and Activities */
+/* footer section */
+.footer{
+    margin-top: 50px;
+}
+.footer-wrap{
+    padding: 40px;
+}
+.ahei .header h3{
+    color: #2b98f0;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.footer-link li a{
+    font-size: 12px;
+    color: rgb(231, 228, 228);
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.footer-link li a:hover{
+    padding-right: 0;
+    padding-left: 0;
+    background: none;
+}
+.ahei{
+    margin-bottom: 20px;
+}
+.footer-wrap{
+    background: grey;
+}
+.footer-img img{
+    width: 340px;
+}
+.water-mark{
+    display: flex;
+    justify-content: space-between;
+}
+.colored-footer{
+    background: #2b98f0;
+    height: 40px;
+    padding-top: 5px;
+    padding-left: 50px;
+    padding-right: 20px;
+}
+.water-mark p{
+    color: #f5f5f5;
+    font-size: 10px;
+    text-align: center;
+    padding-top: 3px;
+}
+.water-mark p span{
+    font-size: 8px;
+}
+.fa-envelope, .fa-bell, .fa-bolt{
+    color: white;
+    margin-right: 10px;
+}
+
+@media screen and (min-width: 960px){
+    .footer-wrap{
+        display: flex;
+    }
+    .colored-footer{
+        padding-left: 500px;
+        padding-right: 150px;
+    }
+    .water-mark p{
+        font-size: 20px;
+    }
+    .water-mark p span{
+        font-size: 12px;
+        padding-bottom: 5px;
+        height: 70px;
+    }
+    .footer-img{
+        padding-top: 40px;
+    }
+}
+
+
+/* End of footer section */
+
+
+
+
+
+
+
+
+
+
+
+
